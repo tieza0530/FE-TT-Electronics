@@ -27,7 +27,7 @@ export function Menu() {
     };
 
     return (
-        <div className="relative flex items-center bg-(--color-main) text-white py-1 overflow-hidden 2xl:px-96 xl:px-32">
+        <div className="relative flex items-center bg-(--color-main) text-white py-1 overflow-hidden 2xl:px-80 xl:px-16">
             <div className="w-3/4 overflow-hidden">
 
                 <motion.div

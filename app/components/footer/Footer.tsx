@@ -10,7 +10,7 @@ import Link from "next/link";
 export const Footer = () => {
     return (
         <div>
-            <div className="bg-(--color-main) text-white grid grid-cols-5 py-10 2xl:px-96 xl:px-32 ">
+            <div className="bg-(--color-main) text-white grid grid-cols-5 py-10 2xl:px-80 xl:px-16 ">
                 <div className="col-span-2  flex flex-col gap-3 text-sm">
                     <p className="text-lg font-semibold">CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ KỸ THUẬT TRƯỜNG PHÁT</p>
                     <p><strong>Mã số thuế :</strong> 0109918856</p>
