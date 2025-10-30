@@ -36,7 +36,7 @@ export const Contact = () => {
         <div className=" flex justify-end mr-8 gap-2">
             <Dialog>
                 <DialogTrigger asChild>
-                    <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-xl"><FiPhone />Hotline</Button>
+                    <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-3xl"><FiPhone />Hotline</Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-md">
                     <DialogHeader>
@@ -58,13 +58,13 @@ export const Contact = () => {
                 </DialogContent>
             </Dialog>
             <Link href="https://www.facebook.com/profile.php?id=61567018625765" target="_blink">
-                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-xl"><FaFacebookMessenger className="text-blue-600" /> Chat FB</Button>
+                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-3xl"><FaFacebookMessenger className="text-blue-600" /> Chat FB</Button>
             </Link>
             <Link href="/" target="_blink">
-                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-xl"><LuMessagesSquare className="text-blue-600" />Zalo</Button>
+                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-3xl"><LuMessagesSquare className="text-blue-600" />Zalo</Button>
             </Link>
             <Link href="https://maps.app.goo.gl/xSShbyWhgopdWuoP7" target="_blink">
-                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-xl"><IoLocationOutline className="text-green-400" /> Maps</Button>
+                <Button className="bg-white text-black border-2 text-xs hover:bg-neutral-200 rounded-3xl"><IoLocationOutline className="text-green-400" /> Maps</Button>
             </Link>
             <div className={`transition-transform  ${visible ? "translate-y-0 " : "translate-y-10 opacity-0" }`}>
                 <Button variant="outline" size="icon" className="rounded-full" onClick={scrollToTop}>

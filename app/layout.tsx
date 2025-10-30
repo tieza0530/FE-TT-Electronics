@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
             <Header />
           </div>
-          <div className="pt-28 ">
+          <div className="pt-24 mt-1">
             {children}
           </div>
           <div className="fixed bottom-5 right-5 z-50 transition-transform hover:scale-102 ">
