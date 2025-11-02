@@ -5,15 +5,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
+import { testData } from "../dataTest";
 
 export function Menu() {
+    
     const visibleCount = 3;
     const [startIndex, setStartIndex] = useState(0);
     const [offsetX, setOffsetX] = useState(0);
     const itemWidth = 160;
 
     const handleNext = () => {
-        if (startIndex + visibleCount < dataMenu.length) {
+        if (startIndex + visibleCount < testData.length) {
             setStartIndex((prev) => prev + 1);
             setOffsetX((prev) => prev - itemWidth);
         }
@@ -35,7 +37,7 @@ export function Menu() {
                     transition={{ type: "tween", ease: "easeInOut", duration: 0.4 }}
                     className="flex items-center whitespace-nowrap"
                 >
-                    {dataMenu.map((item, idx) => (
+                    {testData.map((item, idx) => (
                         <div
                             key={idx}
                             className=" flex-none w-160px flex items-center cursor-pointer hover:text-yellow-400 transition px-3 "
@@ -43,12 +45,12 @@ export function Menu() {
                         >
 
                             <Image
-                                src={`/icon-menu/${item.icon}`}
-                                alt={item.name}
+                                src={`/icon-menu/${item.url}`}
+                                alt={item.category_name}
                                 width={22}
                                 height={22}
                             />
-                            <p className="ml-2 text-sm whitespace-nowrap">{item.name}</p>
+                            <p className="ml-2 text-sm whitespace-nowrap">{item.category_name}</p>
                         </div>
                     ))}
                 </motion.div>
@@ -69,7 +71,7 @@ export function Menu() {
                         variant="ghost"
                         size="icon"
                         onClick={handleNext}
-                        disabled={startIndex + visibleCount >= dataMenu.length}
+                        disabled={startIndex + visibleCount >= testData.length}
                         className="w-8 h-8 rounded-md bg-white/10 hover:bg-white/20 transition disabled:opacity-30"
                     >
                         <GrNext className="text-white" />
@@ -100,12 +102,3 @@ export function Menu() {
     );
 }
 
-export const dataMenu = [
-    { name: "ĐIỀU HÒA", icon: "icon_megamenu_1.png" },
-    { name: "ĐIỆN TỬ", icon: "icon_megamenu_2.png" },
-    { name: "ĐIỆN LẠNH", icon: "icon_megamenu_3.png" },
-    { name: "ĐỒ ĐIỆN GIA DỤNG", icon: "icon_megamenu_4.png" },
-    { name: "NHÀ BẾP - MÁY RỬA BÁT", icon: "icon_megamenu_5.png" },
-    { name: "SỨC KHỎE - LỌC NƯỚC", icon: "icon_megamenu_7.png" },
-    { name: "KINH NGHIỆM SỬ DỤNG", icon: "icon_megamenu_8.png" },
-];
