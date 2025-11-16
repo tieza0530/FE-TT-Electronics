@@ -6,9 +6,10 @@ import { motion } from "framer-motion";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
 import { testData } from "../dataTest";
+import { useRouter } from "next/navigation";
 
 export function Menu() {
-    
+    const route = useRouter()
     const visibleCount = 3;
     const [startIndex, setStartIndex] = useState(0);
     const [offsetX, setOffsetX] = useState(0);
@@ -42,6 +43,7 @@ export function Menu() {
                             key={idx}
                             className=" flex-none w-160px flex items-center cursor-pointer hover:text-yellow-400 transition px-3 "
                             style={{ minWidth: itemWidth }}
+                            onClick={() => route.push(`/${item.slug}`)}
                         >
 
                             <Image

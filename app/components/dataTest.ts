@@ -6,6 +6,7 @@ export interface Brand {
 }
 
 export interface ProductCategory {
+  slug: string;
   category_name: string;
   titile: string;
   banner_url: string;
@@ -13,97 +14,103 @@ export interface ProductCategory {
   brand: Brand[];
 }
 
-
 export const testData: ProductCategory[] = [
   {
     category_name: "ĐIỀU HÒA",
+    slug: "dieu-hoa",
     titile: "Danh sách Điều Hòa",
     url: "icon_megamenu_1.png",
     banner_url: "slider_1.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "ĐIỆN TỬ",
+    slug: "dien-tu",
     titile: "Danh sách TIVI",
     url: "icon_megamenu_2.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "ĐIỆN LẠNH",
+    slug: "dien-lanh",
     titile: "Danh sách Điện Lạnh",
     url: "icon_megamenu_3.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "ĐỒ ĐIỆN GIA DỤNG",
+    slug: "do-dien-gia-dung",
     titile: "Danh sách ĐỒ ĐIỆN GIA DỤNG",
     url: "icon_megamenu_4.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "NHÀ BẾP - MÁY RỬA BÁT",
+    slug: "nha-bep-may-rua-bat",
     titile: "Danh sách NHÀ BẾP - MÁY RỬA BÁT",
     url: "icon_megamenu_5.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "SỨC KHỎE - LỌC NƯỚC",
+    slug: "suc-khoe-loc-nuoc",
     titile: "Danh sách SỨC KHỎE - LỌC NƯỚC",
     url: "icon_megamenu_7.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
   {
     category_name: "KINH NGHIỆM SỬ DỤNG",
+    slug: "kinh-nghiem-su-dung",
     titile: "",
     url: "icon_megamenu_8.png",
     banner_url: "slider_2.webp",
     brand: [
       { name_brand: "SONY", slug: "sony" },
-      { name_brand: "SAMSUNG", slug: "sony" },
-      { name_brand: "TCL", slug: "sony" },
-      { name_brand: "LG", slug: "sony" },
-      { name_brand: "PANASONIC", slug: "sony" },
+      { name_brand: "SAMSUNG", slug: "samsung" },
+      { name_brand: "TCL", slug: "tcl" },
+      { name_brand: "LG", slug: "lg" },
+      { name_brand: "PANASONIC", slug: "panasonic" },
     ],
   },
 ];

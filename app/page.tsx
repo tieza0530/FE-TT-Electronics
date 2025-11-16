@@ -9,7 +9,7 @@ import { TopProductsSale } from "./components/home/topSale/TopProductsSale";
 
 export default function Home() {
   return (
-    <div className="2xl:px-80 xl:px-16">
+    <div className="mb-10 2xl:px-80 xl:px-16">
       <Banner />
       <ListBrand />
       <TopProductsSale />

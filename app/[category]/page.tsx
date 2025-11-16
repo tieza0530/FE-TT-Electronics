@@ -1,12 +1,7 @@
 "use client"
 
-import { useParams } from "next/navigation"
 
-export default function ProductOfCategory () {
-    const param = useParams()
-
-    console.log(param.category);
-    
+export default function ProductOfCategory() {
   return (
     <div>Hello A tiến</div>
   )
