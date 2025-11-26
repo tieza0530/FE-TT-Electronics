@@ -5,12 +5,15 @@ import { TbPhoneCall } from "react-icons/tb";
 import { AiOutlineUser } from "react-icons/ai";
 import { PiShoppingCart } from "react-icons/pi";
 import { Menu } from "./Menu";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
+    const route = useRouter();
+
     return (
         <div>
             <div className="grid grid-cols-3 items-center py-2 2xl:px-80 xl:px-16 ">
-                <div className="">
+                <div onClick={() => route.push('/')}>
                     <Image src="/logo-without-background.png" alt="logo-company" width={300} height={50} />
                 </div>
                 <div>
@@ -23,8 +26,8 @@ export const Header = () => {
                             <p>Tổng đài bán hàng</p>
                             <b>0373388097</b>
                         </div>
-                        <AiOutlineUser className="text-3xl mx-2" />
-                        <PiShoppingCart className="text-2xl " />
+                        <AiOutlineUser className="text-3xl mx-2 cursor-pointer" title="Đăng nhập" onClick={() => route.push('/login')}/>
+                        <PiShoppingCart className="text-2xl cursor-pointer" title="Giỏ hàng" />
                     </div>
                 </div>
             </div>

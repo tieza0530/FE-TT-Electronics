@@ -26,11 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto.className}>
       <body>
-        <div>
+        <div className="h-screen flex flex-col">
           <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
             <Header />
           </div>
-          <div className="pt-24 mt-1 mb-10 ">
+          <div className="flex-1 pt-24">
             {children}
           </div>
           <div className="fixed bottom-5 right-5 z-50 transition-transform hover:scale-102 ">

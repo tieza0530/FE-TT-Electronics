@@ -3,12 +3,12 @@
 import { formatVND } from "../../convert/ConvertVND"
 import Image from "next/image"
 import { TVProduct } from "../topSale/typeProduct"
-import { ProductCategory } from "@/app/page"
 import { PiShoppingCart } from "react-icons/pi";
 import { Button } from "@/components/ui/button"
-export const ProductsOfCategory = ({ dataProducts, category }: { dataProducts: TVProduct[], category: ProductCategory }) => {
-  
+import { ProductCategory } from "../../dataTest";
 
+export const ProductsOfCategory = ({ dataProducts, category }: { dataProducts: TVProduct[], category: ProductCategory }) => {
+    
     return (
         <div className="my-10">
             <div className="flex justify-between">
